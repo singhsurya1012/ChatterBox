@@ -66,7 +66,7 @@ function onOpen(x) {
     console.log("Inside onOpen");
     console.log(x);
     ws.send("%^&*"+username)
-    ws.send(username + " is now Online!!");
+    //ws.send(username + " is now Online!!");
 }
 
 function onMessage(message) {
@@ -88,7 +88,8 @@ function onMessage(message) {
          var childDiv = document.createElement('div');
          var nameDiv = document.createElement('p');
 
-           $(childDiv).addClass("chatbox__user&#45;&#45;active");
+           $(childDiv).addClass("chatbox__user--active");
+
            $(nameDiv).text(user);
            childDiv.appendChild(nameDiv);
 

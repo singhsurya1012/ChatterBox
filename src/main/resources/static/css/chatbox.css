@@ -112,10 +112,11 @@ html, body {
   float: left;
   text-align: left;
   margin: -0.25em 2em;
-  font-size: 0.7em;
+  font-size: 1em;
   font-weight: 300;
   color: #fff;
   width: 200px;
+  padding-top: 5px
 }
 .chatbox form {
   background: #222;
