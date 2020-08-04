@@ -19,7 +19,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class CustomSocketHandler extends TextWebSocketHandler {
 
     public static final Logger LOGGER = LoggerFactory.getLogger(CustomSocketHandler.class);
-    public static final String secretKey = "$%^&";
+    public static final String secretKey = "%^&*";
 
     List<WebSocketSession> users = new CopyOnWriteArrayList<>();
     Map<String, String> usernameMap = new ConcurrentHashMap<>();

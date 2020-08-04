@@ -15,7 +15,6 @@ function connect() {
         };
 
         ws.onmessage = function(event){
-            console.log("onMessage")
             onMessage(event.data);
         //  return false;
         }
@@ -64,13 +63,14 @@ function send() {
 }
 
 function onOpen(x) {
+    console.log("Inside onOpen");
     console.log(x);
     ws.send("%^&*"+username)
     ws.send(username + " is now Online!!");
 }
 
 function onMessage(message) {
-
+    console.log("Inside onMessage");
     console.log(message)
 
     if(message.includes("@#$")) {
